@@ -41,6 +41,7 @@ import {v4} from "uuid"
 const upload=multer()
 
 const app=express()
+app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 config()
 app.use(cookieParser())
