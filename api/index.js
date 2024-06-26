@@ -77,7 +77,13 @@ const verifyToken = async (req, res, next) => {
         res.status(401).send('Unauthorized');
     }
 };
-
+app.get('/',async(req,res)=>{
+    try{
+        res.send('Succesfully hit Plant Buddy Servers :3')
+    }catch(e){
+        res.send('Error hitting the server')
+    }
+})
 app.get('/getPlants',async (req,res)=>{
     try{
         const data=await getDocs(collection(db,'plants'))
