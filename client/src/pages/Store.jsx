@@ -34,7 +34,7 @@ function Store() {
             </div> */}
             <div className='h-full  flex flex-col flex-1 gap-4 overflow-y-scroll  p-4 relative items-center'>
                 <input type="text" className='min-w-[16rem] w-[30%] h-[3rem] rounded-md px-4 outline-none drop-shadow-lg text-green-600' placeholder='Search Plant'/>
-                <div className='flex gap-2 overflow-y-scroll w-full md:w-[70%] min-w-[16rem] justify-center flex-wrap no-scrollbar '>
+                <div className='flex gap-1 overflow-y-scroll w-full md:w-[70%] min-w-[16rem]  justify-center flex-wrap no-scrollbar '>
                   {plants?
                   plants.map((pl)=>(
                     <Link to={`/item/${pl.Id}`}> 
