@@ -46,7 +46,7 @@ function OrderArea(){
         <div className="flex flex-col gap-y-2 overflow-y-scroll w-full h-full p-2 relative">
             <h3>Orders</h3>
             {toggle?
-            <div className="flex flex-col w-full overflow-y-scroll items-start gap-y-2  relative leading-snug">
+            <div className="flex flex-col w-full overflow-y-scroll no-scrollbar items-start gap-y-2  relative leading-snug">
                 <button onClick={()=>setToggle(false)} className="w-[5rem] bg-black text-white jost-500 rounded-md">Go back</button>
                 <h3 className='text-[15px] jost-500'>{orders[actOrder].data.name}</h3>
                 <h3 className='text-[15px] jost-500'>{orders[actOrder].data.email}</h3>
@@ -90,7 +90,7 @@ function OrderArea(){
 
             </div>
             :
-            orders===null?<>Issue getting orders</>:
+            orders===null?<>No orders to display</>:
             orders.map((order,index)=>(
                 <Order_Card info={order} id={index} key={index} toggle={ToggleOrder}/>
             ))}
