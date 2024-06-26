@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  body {
+    @apply m-0 border-0 jost-400
+  }
+  .Navbar a{
+    @apply hover:text-green-700
+  }
+  img {
+    @apply object-cover w-full h-full object-top
+  }
+  h1{
+    @apply text-[60px] jost-600 leading-[70px]
+  }
+  .ct-bento{
+    @apply  border-none drop-shadow-md bg-blue-400 rounded-md flex justify-center items-center text-white jost-500 text-[20px] text-center md:text-[40px] relative hover:scale-95
+  }
+  .ct-bento img{
+    @apply rounded-md
+  }
+  .ct-bento p{
+    @apply absolute bottom-1/2 
+  }
+  .ct-bento img{
+    @apply object-cover 
+  }
+  h2{
+    @apply jost-500 text-[25px]
+  }
+  h3{
+    @apply jost-500 text-[20px]
+  }
+  .yell-green-gr{
+    @apply  from-yellow-100  to-green-200
+  }
+  .addressForm input{
+    @apply  h-4 text-[12px] outline-none p-2 rounded-md
+  }
+}
+
+.jost-100 {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+.jost-200 {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+.jost-300 {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.jost-400 {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.jost-500 {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.jost-600 {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.jost-700 {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.jost-800 {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+.jost-900 {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
