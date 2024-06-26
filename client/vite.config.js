@@ -6,10 +6,10 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:3000',
+        target: 'https://plant-buddy-server.vercel.app',
         changeOrigin: true,
         secure: false,
-        rewrite: (path) => path.replace(/^\/api/, 'http://localhost:3000'),
+        rewrite: (path) => path.replace(/^\/api/, 'https://plant-buddy-server.vercel.app'),
         configure: (proxy, options) => {
           proxy.on('proxyReq', (proxyReq, req, res) => {
             console.log('Proxying request:', req.url);
