@@ -33,7 +33,7 @@ function SingUp() {
     },[send])
     function validateForm(){
         var flag=0
-        if(nm.length<6){
+        if(nm.length<1){
             setEr('Name is too short')
             flag=1
         }
