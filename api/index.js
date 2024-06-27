@@ -151,7 +151,7 @@ app.post('/signUpUser',async (req,res)=>{
                 name:name,addrs:[null],
                 paymt:[null],
                 wish:[null],
-                cart:[null],
+                cart:{items:[null],value:0},
                 number:''
             })
         console.log(req.body)
